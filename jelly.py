@@ -80,7 +80,7 @@ def conv_monadic_integer(link, arg):
 		return 0
 
 def convolve(left, right):
-	left, right = iterable(left, make_range = True), iterable(right, make_range = True)
+	left, right = iterable(left), iterable(right)
 	result = [0]*(len(left)+len(right)-1)
 	for i,x in enumerate(left):
 		for j,y in enumerate(right):
